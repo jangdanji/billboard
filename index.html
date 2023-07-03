@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="./js/script.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="wrap">
+            <div class="head">
+
+                <div class="icon1 iconBox iconChk1">
+                    <label id="menuChk">
+                        <i class="fas fa-bars"></i>
+                        <i class="fas fa-times"></i>
+                    </label>
+                </div>
+
+                <div class="logo">
+                    <a href="./index.html">
+                        <img src="./img/billboard_logo1.png" alt="">
+                    </a>
+                </div>
+
+                <div class="icon2 iconBox">
+                    <i class="fas fa-sign-in-alt"></i>
+                </div>
+            </div>
+            <div class="searchBar">
+                <div class="searchBarWrap">
+                    <div class="searchIcon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="bar">
+                        <input type="text" placeholder="search..">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="menu">
+            <div class="menuWrap">
+                <div class="menuBars">
+                    <label class="category cgChart" for="cgChart">
+                        <input type="checkbox" id="cgChart">
+                        <div class="top">
+                            <p>Charts</p>
+                            <label>
+                                <i class="fas fa-plus"></i>
+                                <i class="fas fa-minus"></i>
+                            </label>
+                        </div>
+                        <div class="bottom">
+                            <ul>
+                                <li>All Charts</li>
+                                <li><a href="./sub_page.html">Hot 100</a></li>
+                                <li>Billboard 200</li>
+                                <li>Global 200</li>
+                                <li>Chart Beat</li>
+                                <li>Billboard NXT</li>
+                                <li>Hot Trending Songs - Real-Time</li>
+                                <li>Hot Trending Songs - Weekly</li>
+                                <li>Song Breaker</li>
+                                <li>Year-End Charts</li>
+                                <li>Decade-End Charts</li>
+                            </ul>
+                        </div>
+                    </label>
+                </div>
+            
+                <div class="menuBars">
+                    <label class="category cgMusic" for="cgMusic">
+                        <input type="checkbox" id="cgMusic">
+                        <div class="top">
+                            <p>Music</p>
+                            <label>
+                                <i class="fas fa-plus"></i>
+                                <i class="fas fa-minus"></i>
+                            </label>
+                        </div>
+                        <div class="bottom">
+                            <ul>
+                                <li>Music News</li>
+                                <li>Pop</li>
+                                <li>R&B/Hip-Hop</li>
+                                <li>Latin</li>
+                                <li>Rock</li>
+                                <li>Awards</li>
+                                <li>Chart Beat</li>
+                                <li>Concerts</li>
+                                <li>Features</li>
+                                <li>Reviews</li>
+                            </ul>
+                        </div>
+                    </label>
+                </div>
+            
+                <div class="menuBars">
+                    <label class="category cgCulture" for="cgCulture">
+                        <input type="checkbox" id="cgCulture">
+                        <div class="top">
+                            <p>Culture</p>
+                            <label>
+                                <i class="fas fa-plus"></i>
+                                <i class="fas fa-minus"></i>
+                            </label>
+                        </div>
+                        <div class="bottom">
+                            <ul>
+                                <li>Events</li>
+                                <li>Lifestyle</li>
+                                <li>Politics</li>
+                                <li>TV/Film</li>
+                            </ul>
+                        </div>
+                    </label>
+                </div>
+            
+                <div class="menuBars">
+                    <label class="category cgMedia" for="cgMedia">
+                        <input type="checkbox" id="cgMedia">
+                        <div class="top">
+                            <p>Media</p>
+                            <label>
+                                <i class="fas fa-plus"></i>
+                                <i class="fas fa-minus"></i>
+                            </label>
+                        </div>
+                        <div class="bottom">
+                            <ul>
+                                <li>Lists</li>
+                                <li>Photos</li>
+                                <li>Podcasts</li>
+                                <li>Videos</li>
+                            </ul>
+                        </div>
+                    </label>
+                </div>
+            
+                <div class="menuBars">
+                    <label class="category cgBusiness" for="cgBusiness">
+                        <input type="checkbox" id="cgBusiness">
+                        <div class="top">
+                            <p>Business</p>
+                            <label>
+                                <i class="fas fa-plus"></i>
+                                <i class="fas fa-minus"></i>
+                            </label>
+                        </div>
+                        <div class="bottom">
+                            <ul>
+                                <li>Business News</li>
+                                <li>Legal</li>
+                                <li>Touring</li>
+                                <li>Publishing</li>
+                                <li>Radio</li>
+                                <li>Record Labels</li>
+                                <li>View All Pro</li>
+                            </ul>
+                        </div>
+                    </label>
+                </div>
+            
+                <div class="menuBars">
+                    <label class="category cgPro" for="cgPro">
+                        <input type="checkbox" id="cgPro">
+                        <div class="top">
+                            <p>Pro Tools</p>
+                            <label>
+                                <i class="fas fa-plus"></i>
+                                <i class="fas fa-minus"></i>
+                            </label>
+                        </div>
+                        <div class="bottom">
+                            <ul>
+                                <li>Songwriters & Producers</li>
+                                <li>Song Index</li>
+                                <li>Artist Index</li>
+                            </ul>
+                        </div>
+                    </label>
+                </div>
+            
+                <div class="menuBars">
+                    <label class="category cgEsp" for="cgEsp">
+                        <input type="checkbox" id="cgEsp">
+                        <div class="top">
+                            <p>Billboard Español</p>
+                            <label>
+                                <i class="fas fa-plus"></i>
+                                <i class="fas fa-minus"></i>
+                            </label>
+                        </div>
+                        <div class="bottom">
+                            <ul>
+                                <li>Noticias</li>
+                                <li>Música</li>
+                                <li>Negocios</li>
+                                <li>Cultura y Entretenimiento</li>
+                            </ul>
+                        </div>
+                    </label>
+                </div>
+            
+                <div class="menuBars">
+                    <label class="category cgHonda" for="cgHonda">
+                        <input type="checkbox" id="cgHonda">
+                        <div class="top">
+                            <p>Honda Music</p>
+                            <label>
+                                <i class="fas fa-plus"></i>
+                                <i class="fas fa-minus"></i>
+                            </label>
+                        </div>
+                        <div class="bottom">
+                            <ul>
+                                <li>Honda Music</li>
+                            </ul>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer_menu">
+            <div class="footerMenuWrap">
+                <div class="sns">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <div class="subscribe">
+                    <div class="subWrap">
+                        <input type="text" placeholder="Enter Your Email">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="capcha">
+                    <p>This site is protected by reCAPTCHA Enterprise and the Google Privacy Policy and Terms of Service apply.</p>
+                </div>
+                <div class="footMenu">
+                    <ul>
+                        <li>About Us</li>
+                        <li>Accessibility</li>
+                        <li>Advertise</li>
+                        <li>Shop</li>
+                        <li>Events</li>
+                        <li>Careers</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+                <div class="footest">
+                    <div class="logo">
+                        <img src="./img/logo_white.png" alt="">
+                    </div>
+                    <div class="footText">
+                        Billboard is a part of Penske Media Corporation.<br />
+                        © 2023 Billboard Media, LLC. All Rights Reserved.
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </header>
+
+    <div class="lnb">
+        <div class="wrap">
+            <div class="lnb head">
+                <div class="lnbWrap">
+                    <ul>
+                        <li><a href="./sub_page.html">CHARTS</a></li>
+                        <li>MUSIC</li>
+                        <li>CULTURE</li>
+                        <li>MEDIA</li>
+                        <li>BUSINESS</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="visual">
+            <div class="wrap">
+                <div class="visualSilder">
+                    <div class="topStory">
+                        <img src="./img/visual1.jpg" alt="">
+                        <div class="headline">
+                            <div class="category"><span class="category hCursor">TOP STORY</span></div>
+                            <span class="top">Miley Cyrus’ ‘Flowers’ Returns to No. 1 on Hot 100, Rema & Selena Gomez’s ‘Calm Down’ Hits Top 10</span>
+                        </div>
+                    </div>
+                    <div class="topStory">
+                        <img src="./img/visual2.jpg" alt="">
+                        <div class="headline">
+                            <div class="category"><span class="category hCursor">PRIDE</span></div>
+                            <span class="top">Sam Smith & Kim Petras’ ‘Unholy’ Crosses 1 Billion Spotify Streams</span>
+                        </div>
+                    </div>
+                    <div class="topStory">
+                        <img src="./img/visual3.jpg" alt="">
+                        <div class="headline">
+                            <div class="category"><span class="category hCursor">AWARDS</span></div>
+                            <span class="top">Selena Gomez, Harry Styles, Bad Bunny & More Nominated for 2023 MTV Movie & TV Awards</span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    
+        <div class="chart mainPageChart">
+            <div class="wrap">
+                <div class="chartHead">
+                    <h2>HOT100</h2>
+                    <h5>WEEK OF MARCH 30, 2023</h5>
+                </div>
+                <div class="chartRank">
+                    <div class="song">
+                        <div class="cover">
+                            <img src="./img/song1.jpg" alt="">
+                        </div>
+                        <p class="rank">1</p>
+                        <p class="songTitle">Flowers</p>
+                        <p class="artist">Miley Cyrus</p>
+                    </div>
+                    <div class="song">
+                        <div class="cover">
+                            <img src="./img/song2.jpg" alt="">
+                        </div>
+                        <p class="rank">2</p>
+                        <p class="songTitle">Last Night</p>
+                        <p class="artist">Morgan Wallen</p>
+                    </div>
+                    <div class="song">
+                        <div class="cover">
+                            <img src="./img/song3.jpg" alt="">
+                        </div>
+                        <p class="rank">3</p>
+                        <p class="songTitle">Kill Bill</p>
+                        <p class="artist">SZA</p>
+                    </div>
+                    <div class="song">
+                        <div class="cover">
+                            <img src="./img/song4.jpg" alt="">
+                        </div>
+                        <p class="rank">4</p>
+                        <p class="songTitle">Die For You</p>
+                        <p class="artist">The Weeknd & Ariana Grande</p>
+                    </div>
+                    <div class="song">
+                        <div class="cover">
+                            <img src="./img/song5.jpg" alt="">
+                        </div>
+                        <p class="rank">5</p>
+                        <p class="songTitle">Boy's A Liar, Pt. 2</p>
+                        <p class="artist">PinkPantheress &Ice Spice</p>
+                    </div>
+                    <div class="song">
+                        <div class="cover">
+                            <img src="./img/billboard.png" alt="">
+                        </div>
+                        <p class="rank"><i class="fas fa-chart-line"></i></p>
+                        <p class="songTitle">VIEW MORE</p>
+                        <p class="artist">HOT 100</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class="news">
+            <div class="wrap">
+                <div class="latestNews">
+                    <div class="bar"></div>
+                    
+                    <div class="articles">
+                        <h2>LATEST NEWS</h2>
+                        <div class="article">
+                            <img src="./img/news1.png" alt="">
+                            <div>
+                                <p class="newsTitle">An Australian Senator Wore a Tame Impala Shirt In Parliament House</p>
+                                <p class="date">1 hr ago</p>
+                            </div>
+                        </div>
+                        <div class="article">
+                            <img src="./img/news2.png" alt="">
+                            <div>
+                                <p class="newsTitle">GALE Scores FirstTop 10 on a
+                                    Billboard Chart: ‘Such A Special
+                                    Moment For Me’</p>
+                                <p class="date">2 hr ago</p>
+                            </div>
+    
+                        </div>
+                        <div class="article">
+                            <img src="./img/news3.png" alt="">
+                            <div>
+                                <p class="newsTitle">NCT DREAM Talk U.S.Tour, New 
+                                    Music & Why ‘Everything Comes
+                                    With Timing’ for ‘7DREAM’</p>
+                                <p class="date">3 hr ago</p>
+                            </div>
+                        </div>
+                        <div class="article">
+                            <img src="./img/news4.png" alt="">
+                            <div>
+                                <p class="newsTitle">TikTok CEO Shares Video Ahead of 
+                                    Congressional Hearing Claiming Half 
+                                    of U.S. Is on App</p>
+                                <p class="date">3 hr ago</p>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="editorPicks">
+                    <h1>EDITOR PICKS</h1>
+                    <div class="articleBox">
+                        <div class="pick">
+                            <div class="imgWrap"><img src="./img/pick1.jpg" alt=""></div>
+                            <div class="picksHead">
+                                <div class="category"><span>CHART BEAT</span></div>
+                                <div class="pickTitle"><p>Is Miley Cyrus’ No. 3 Album Debut a
+                                Success or Disappointment?</p></div>
+                            </div>
+                                <div class="date"><p>By Katie Atkinson<br />7 hrs ago</p></div>
+                        </div>
+                        <div class="pick">
+                            <div class="imgWrap"><img src="./img/pick2.jpg" alt=""></div>
+                            <div class="picksHead">
+                                <div class="category"><span>R&B/HIP-HOP</span></div>
+                                <div class="pickTitle"><p>R&B/Hip-Hop Fresh Picks of the Week : BLK ODYSSY,
+                                    Amaarae, 6lack & More</p></div>
+                            </div>
+                                <div class="date"><p>By Cydney Lee, NeenaRouhani<br />12 hrs ago</p></div>
+                        </div>
+                        <div class="pick">
+                            <div class="imgWrap"><img src="./img/pick3.jpg" alt=""></div>
+                            <div class="picksHead">
+                                <div class="category"><span>POP</span></div>
+                                <div class="pickTitle"><p>Taylor Swift’s The Eras Tour: See All the Looks From
+                                    Night One</p></div>
+                            </div>
+                                <div class="date"><p>By Jenny Regan<br />1 hrs ago</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="video">
+            <h1>VIDEO</h1>
+            <div class="wrap">
+                
+                <div class="topVideo">
+                    
+                    <div class="topPost"><img src="./img/video_top.jpg" alt=""></div>
+                    <div class="desc">
+                        <div class="category"><span>POPULAR ON BILLBOARD</span></div>
+                        <div class="videoTitle">
+                            <p>Kim Petras Reveals Her Dream Girl Group: Cher,
+                                Nicki Minaj & More</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="moreVideo">
+                    <div class="videoPost">
+                        <div class="thumb"><img src="./img/video_another1.jpg" alt=""></div>
+                        <div class="videoTitle">
+                            <p>Kim Petras Reveals Her Dream Girl Group: Cher,
+                                Nicki Minaj & More</p>
+                        </div>
+                    </div>
+                    <div class="videoPost">
+                        <div class="thumb"><img src="./img/video_another2.jpg" alt=""></div>
+                        <div class="videoTitle">
+                            <p>Taron Egerton & The Cast of 
+                                ‘Tetris’ Meet OurHost Tetris | Billboard News
+                                </p>
+                        </div>
+                    </div>
+    
+                    <div class="videoPost">
+                        <div class="thumb"><img src="./img/video_another3.jpg" alt=""></div>
+                        <div class="videoTitle">
+                            <p>Kx5’s deadmau5 and Kaskade Play How Well Do 
+                                Your Bandmates?</p>
+                        </div>
+                    </div>
+                    <div class="videoPost">
+                        <div class="thumb"><img src="./img/video_another4.jpg" alt=""></div>
+                        <div class="videoTitle">
+                            <p>War and Treaty Talk About New Album ‘Lover’s Game’,
+                                Touring</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="pop">
+            <div class="wrap">
+    
+                <!-- <input type="radio" id="g1" name="genre" checked>
+                <input type="radio" id="g2" name="genre">
+                <input type="radio" id="g3" name="genre">
+                <input type="radio" id="g4" name="genre">
+                <input type="radio" id="g5" name="genre">
+                <input type="radio" id="g6" name="genre"> -->
+
+
+    
+                <div class="popHead">
+                    <h1>POPULAR CHANNELS</h1>
+                    <ul>
+                        <li class="POP"><label>POP</label></li>
+                        <li class="ROCK"><label>ROCK</label></li>
+                        <li class="HIPHOP"><label>R&B/HIPHOP</label></li>
+                        <li class="DANCE"><label>DANCE</label></li>
+                        <li class="COUNTRY"><label>COUNTRY</label></li>
+                        <li class="LATIN"><label>LATIN</label></li>
+                    </ul>
+                </div>
+
+
+    
+                <div class="popContent POP">
+                    <div class="popTop">
+                        <div class="popImg"><img src="./img/pop1.jpg" alt=""></div>
+                        <div class="popTitle">
+                            <div class="category"><span>POP</span></div>
+                            <div class="popHeadline"><p>NCT DREAM Talk U.S. Tour, New Music & Why 
+                                ‘Everything Comes With Timing’ for ‘7DREAM’</p></div>
+                            <div class="date"><p>By Jenny Regan<br />1 hrs ago</p></div>
+                        </div>
+                    </div>
+                    <div class="popPosts">
+                        <div class="popPost">
+                            <div class="thumb"><img src="./img/pop2.jpg" alt=""></div>
+                            <div class="popHeadline">
+                                <p>Madonna & Max Martin
+                                    Are in the Studio
+                                    Together: ‘When in Doubt,
+                                    Go to Work’
+                                    </p>
+                                <p>By Jessica Nicholson<br />1 hrs ago</p>
+                            </div>
+                        </div>
+                        <div class="popPost">
+                            <div class="thumb"><img src="./img/pop3.jpg" alt=""></div>
+                            <div class="popHeadline">
+                                <p>10 Cool New Pop Songs to
+                                    Get You Through The Week:
+                                    Jimin, Aly & AJ,
+                                    Phoenix, Clairo & More
+                                    </p>
+                                <p>By Carl Lamarre<br />1 hrs ago</p>
+                            </div>
+                        </div>
+                        <div class="popPost">
+                            <div class="thumb"><img src="./img/pop4.jpg" alt=""></div>
+                            <div class="popHeadline">
+                                <p>Jonas Brothers Light Up
+                                    Broadway With ‘The Album’
+                                    :
+                                    5 Best Moments From the
+                                    Marquis Theatre
+                                    </p>
+                                <p>By Neena Rouhani<br />2 hrs ago</p>
+                            </div>
+                        </div>
+                        <div class="popPost">
+                            <div class="thumb"><img src="./img/pop5.jpg" alt=""></div>
+                            <div class="popHeadline">
+                                <p>BLACKPINK’s Rosé & Harry
+                                    Styles Pose Backstage at
+                                    Love on Tour in Seoul
+                                    </p>
+                                <p>By Rania Aniftos<br />4 urs ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popContent ROCK">
+                    <div class="popTop">
+                        <div class="popImg"><img src="./img/rock1.jpg" alt=""></div>
+                        <div class="popTitle">
+                            <div class="category"><span>ROCK</span></div>
+                            <div class="popHeadline"><p>Robert Smith Says The Cure Got 7,000 Secondary Market Tickets Cancelled</p></div>
+                            <div class="date"><p>By Glenn Rowley<br />3 hrs ago</p></div>
+                        </div>
+                    </div>
+                    <div class="popPosts">
+                        <div class="popPost">
+                            <div class="thumb"><img src="./img/rock2.jpg" alt=""></div>
+                            <div class="popHeadline">
+                                <p>Guns N’ Roses, Ozzy Osbourne, AC/DC, Metallica, Tool, Iron Maiden to Play Inaugural PowerTrip Metal Festival</p>
+                                <p>By Rob LeDonne<br />3 hrs ago</p>
+                            </div>
+                        </div>
+                        <div class="popPost">
+                            <div class="thumb"><img src="./img/rock3.jpg" alt=""></div>
+                            <div class="popHeadline">
+                                <p>Rancid’s Tim Armstrong Reunites With Operation Ivy Bandmate in Bad Optix
+                                    </p>
+                                <p>By Rania Aniftos<br />3 hrs ago</p>
+                            </div>
+                        </div>
+                        <div class="popPost">
+                            <div class="thumb"><img src="./img/rock4.jpg" alt=""></div>
+                            <div class="popHeadline">
+                                <p>Tom Morello Says Future of Rage Against the Machine Touring Unclear: ‘I Know As Much As You Do’
+                                    </p>
+                                <p>By Lars Brandle<br />5 hrs ago</p>
+                            </div>
+                        </div>
+                        <div class="popPost">
+                            <div class="thumb"><img src="./img/rock5.jpg" alt=""></div>
+                            <div class="popHeadline">
+                                <p>Boygenius Announces North American Headlining Tour in Support of ‘The Record’: See the Dates
+                                    </p>
+                                <p>By Rania Aniftos<br />7 hrs ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popContent HIPHOP">
+                    <div class="popTop">
+                        <div class="popImg"><img src="./img/hip1.jpg" alt=""></div>
+                        <div class="popTitle">
+                            <div class="category"><span>R&B/HIPHOP</span></div>
+                            <div class="popHeadline"><p>Will.i.am & Saweetie Heat Up ‘That’s My Jam’ With Rap Medley Featuring Songs By Outkast, DMX, TLC & More</p></div>
+                            <div class="date"><p>By Kat Bein<br />13 hrs ago</p></div>
+                        </div>
+                    </div>
+                    <div class="popPosts">
+                        <div class="popPost">
+                            <div class="thumb"><img src="./img/hip2.jpg" alt=""></div>
+                            <div class="popHeadline">
+                                <p>Drake Samples Audio of Kim Kardashian Talking About Divorcing Ye in New Track ‘Rescue Me’
+                                    </p>
+                                <p>By Gil Kaufman<br />17 hrs ago</p>
+                            </div>
+                        </div>
+                        <div class="popPost">
+                            <div class="thumb"><img src="./img/hip3.jpg" alt=""></div>
+                            <div class="popHeadline">
+                                <p>Cardi B Says It’s ‘Not a Flex’ to Have Sex Multiple Times Every Day
+                                    </p>
+                                    <p>By Gil Kaufman<br />18 hrs ago</p>
+                            </div>
+                        </div>
+                        <div class="popPost">
+                            <div class="thumb"><img src="./img/hip4.jpg" alt=""></div>
+                            <div class="popHeadline">
+                                <p>R&B/Hip-Hop Fresh Picks of the Week: 2Rare, Kiana Lede, Luh Tyler & More
+                                    </p>
+                                    <p>By Gil Kaufman<br />21 hrs ago</p>
+                            </div>
+                        </div>
+                        <div class="popPost">
+                            <div class="thumb"><img src="./img/hip5.jpg" alt=""></div>
+                            <div class="popHeadline">
+                                <p>Summer Walker Announces New EP ‘Clear 2: Soft Life’ at Dreamville Festival
+                                    </p>
+                                    <p>By Gil Kaufman<br />1 days ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popContent DANCE">
+                    <div class="popTop">
+                        <div class="popImg"><img src="./img/dance1.jpg" alt=""></div>
+                        <div class="popTitle">
+                            <div class="category"><span>DANCE</span></div>
+                            <div class="popHeadline"><p>20 Questions With Elderbrook: On His New Album, Learning to Say No & Why ‘You Don’t Have to Wait for Creativity’</p></div>
+                            <div class="date"><p>By Jenny Regan<br />13 hrs ago</p></div>
+                        </div>
+                    </div>
+                    <div class="popPosts">
+                        <div class="popPost">
+                            <div class="thumb"><img src="./img/dance2.jpg" alt=""></div>
+                            <div class="popHeadline">
+                                <p>Here’s How W Hotel Is Rolling Out the Red Carpet for Music Fans
+                                    </p>
+                                    <p>By Gil Kaufman<br />17 hrs ago</p>
+                            </div>
+                        </div>
+                        <div class="popPost">
+                            <div class="thumb"><img src="./img/dance3.jpg" alt=""></div>
+                            <div class="popHeadline">
+                                <p>Hear Exclusive SXM Festival 2023 Sets From Dubfire, Francesca Lombardo & Tony y Not
+                                    </p>
+                                    <p>By Gil Kaufman<br />17 hrs ago</p>
+                            </div>
+                        </div>
+                        <div class="popPost">
+                            <div class="thumb"><img src="./img/dance4.jpg" alt=""></div>
+                            <div class="popHeadline">
+                                <p>‘Say Say Say’ What? Kygo on His Energetic Remake of Michael Jackson & Paul McCartney’s Classic
+                                    </p>
+                                    <p>By Gil Kaufman<br />19 hrs ago</p>
+                            </div>
+                        </div>
+                        <div class="popPost">
+                            <div class="thumb"><img src="./img/dance5.jpg" alt=""></div>
+                            <div class="popHeadline">
+                                <p>‘It’s Been a Huge, Jumbled-Up, Confusing Development’: Richie Hawtin on the Current State of Techno
+                                    </p>
+                                    <p>By Gil Kaufman<br />19 hrs ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popContent COUNTRY">
+                    <div class="popTop">
+                        <div class="popImg"><img src="./img/country1.jpg" alt=""></div>
+                        <div class="popTitle">
+                            <div class="category"><span>COUNTRY</span></div>
+                            <div class="popHeadline"><p>Kane Brown, Jelly Roll & More Record-Setters at 2023 CMT Music Awards</p></div>
+                            <div class="date"><p>By Paul Grein<br />3 hrs ago</p></div>
+                        </div>
+                    </div>
+                    <div class="popPosts">
+                        <div class="popPost">
+                            <div class="thumb"><img src="./img/country2.jpg" alt=""></div>
+                            <div class="popHeadline">
+                                <p>Niall Horan Hilariously Impersonates Blake Shelton in Fake Biopic for ‘The Voice’
+                                    </p>
+                                    <p>By Harry Kane<br />3 hrs ago</p>
+                            </div>
+                        </div>
+                        <div class="popPost">
+                            <div class="thumb"><img src="./img/country3.jpg" alt=""></div>
+                            <div class="popHeadline">
+                                <p>Tanya Tucker, Patty Loveless & Bob McDill Join the Country Music Hall of Fame
+                                    </p>
+                                    <p>By Jonathan Williams<br />4 hrs ago</p>
+                            </div>
+                        </div>
+                        <div class="popPost">
+                            <div class="thumb"><img src="./img/country4.jpg" alt=""></div>
+                            <div class="popHeadline">
+                                <p>Jelly Roll Geeked Out Over Gwen Stefani at the 2023 CMT Music Awards
+                                    </p>
+                                    <p>By Reid BG<br />15 hrs ago</p>
+                            </div>
+                        </div>
+                        <div class="popPost">
+                            <div class="thumb"><img src="./img/country5.jpg" alt=""></div>
+                            <div class="popHeadline">
+                                <p>Watch Chase Stokes Be a Supportive Boyfriend While Jamming to Kelsea Ballerini’s CMT Music Awards Performance
+                                    </p>
+                                    <p>By Katie Bain<br />17 hrs ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popContent LATIN">
+                    <div class="popTop">
+                        <div class="popImg"><img src="./img/latin1.jpg" alt=""></div>
+                        <div class="popTitle">
+                            <div class="category"><span>LATIN</span></div>
+                            <div class="popHeadline"><p>Marco Antonio Solis Pours 40 Years of Hits at El Buki Tour Stop in Miami</p></div>
+                            <div class="date"><p>By Jessica Roiz<br />2 hrs ago</p></div>
+                        </div>
+                    </div>
+                    <div class="popPosts">
+                        <div class="popPost">
+                            <div class="thumb"><img src="./img/latin2.jpg" alt=""></div>
+                            <div class="popHeadline">
+                                <p>Los Temerarios Bring Nostalgia-Packed Show to Chicago: ‘Thank You For All the Love’
+                                    </p>
+                                <p>By Stephen Daw<br />2 hrs ago</p>
+                            </div>
+                        </div>
+                        <div class="popPost">
+                            <div class="thumb"><img src="./img/latin3.jpg" alt=""></div>
+                            <div class="popHeadline">
+                                <p>Sech Gives Baseball Anthem an All-Spanish Twist & More Uplifting Moments in Latin Music
+                                    </p>
+                                    <p>By Jessica Nicholson<br />13 hrs ago</p>
+                            </div>
+                        </div>
+                        <div class="popPost">
+                            <div class="thumb"><img src="./img/latin4.jpg" alt=""></div>
+                            <div class="popHeadline">
+                                <p>Natti Natasha, Yahritza Y Su Esencia & More: What’s Your Favorite New Latin Music Release? Vote!
+                                    </p>
+                                    <p>By Jessica Nicholson<br />17 hrs ago</p>
+                            </div>
+                        </div>
+                        <div class="popPost">
+                            <div class="thumb"><img src="./img/latin5.jpg" alt=""></div>
+                            <div class="popHeadline">
+                                <p>Ana Bárbara on Her Career as a Female Composer: ‘I Believe It All Now’
+                                    </p>
+                                    <p>By Stephen Daw<br />17 hrs ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <footer class="footer">
+        <div class="wrap">
+            <div class="logo"><img src="./img/PMClogo.png" alt=""></div>
+            <p>Billboard is a part of Penske Media Corporation. © 2023 Billboard Media, LLC. All Rights Reserved.<br />
+                Powered by WordPress.com VIP
+                </p>
+            <select name="oursites" id="site">
+                <option value="">OURS SITE</option>
+                <option value="">ARTNEWS</option>
+                <option value="">BGR</option>
+                <option value="">DEADLINE</option>
+                <option value="">FAIRCHILD MEDIA</option>
+                <option value="">FOOTWEAR NEWS</option>
+                <option value="">GOLD DERBY</option>
+                <option value="">ROBB REPORT</option>
+                <option value="">ROLLING STONE</option>
+                <option value="">SHEKNOWS</option>
+                <option value="">SHE MEDIA</option>
+                <option value="">SOAPS</option>
+                <option value="">SOURCING JOURNAL</option>
+                <option value="">SPORTICO</option>
+                <option value="">SPY</option>
+                <option value="">STYLECASTER</option>
+                <option value="">THE HOLLYWOOD REPORTER</option>
+                <option value="">TVLINE</option>
+                <option value="">VARIETY</option>
+                <option value="">VIBE</option>
+                <option value="">WWD</option>
+            </select>
+        </div>
+    </footer>
+
+
+</body>
+</html>

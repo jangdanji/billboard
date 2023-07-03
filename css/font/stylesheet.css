@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Neue Haas Grotesk Display Pro';
+    src: url('NeueHaasDisplay-Roman.eot');
+    src: url('NeueHaasDisplay-Roman.eot?#iefix') format('embedded-opentype'),
+        url('NeueHaasDisplay-Roman.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue Haas Grotesk Display Pro';
+    src: url('NeueHaasDisplay-XThin.eot');
+    src: url('NeueHaasDisplay-XThin.eot?#iefix') format('embedded-opentype'),
+        url('NeueHaasDisplay-XThin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue Haas Grotesk Display Pro';
+    src: url('NeueHaasDisplay-Bold.eot');
+    src: url('NeueHaasDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+        url('NeueHaasDisplay-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
