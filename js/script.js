@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $('.content .visual .visualSilder').slick({
         autoplay: true
-    });
+    })
 
     $('header .icon1.iconBox').click(function(){
         $('header .icon1.iconBox .fas').toggle()
@@ -22,13 +22,13 @@ $(document).ready(function(){
     })
 
     $("header #menuChk").click( function(){
-            $('header .menu').toggle();
-            $('header .searchBar').toggle();
-            $('header .footer_menu').toggle();
+            $('header .menu').toggle()
+            $('header .searchBar').toggle()
+            $('header .footer_menu').toggle()
 
             /* 로그인, 검색 아이콘 토글 */
-            $('header .icon2 span').toggle();
-            $('header .icon2 .fa-search').toggle();
+            $('header .icon2 span').toggle()
+            $('header .icon2 .fa-search').toggle()
 
             $('.visual').toggle()
             $('.chart').toggle()
@@ -39,11 +39,11 @@ $(document).ready(function(){
             $('footer.footer').toggle()
 
             $('.content').toggle()
-    });
+    })
 
     /* 1등 곡 정보 버튼 (stats, news, share) 기능 */
     $('.no1data .dataMenu div').click(function(){
-        $('.no1data .dataMenu .selectMenu').removeClass('selectMenu');
+        $('.no1data .dataMenu .selectMenu').removeClass('selectMenu')
         $(this).addClass('selectMenu')
 
         $('.no1data .selected').removeClass('selected')
@@ -60,20 +60,21 @@ $(document).ready(function(){
             $('.no1data .dataShare').addClass('selected')
         }
 
-    });
+    })
 
     $('header .icon1.iconBox').click(function(){
         $('header .icon1.iconBox .fas').toggle()
     })
 
+    /* 차트곡 클릭하면 상세정보 출력 (차트에는 하나의 상세정보만 출력되게) */
     $('ul.chartSong').click(function(){
-        let eventBox = $(this).next('.dropRow')
-        let plusBtn = $(this).find('.viewMoreBtn .fa-plus')
-        let minusBtn = $(this).find('.viewMoreBtn .fa-minus')
+        const eventBox = $(this).next('.dropRow')
+        const plusBtn = $(this).find('.viewMoreBtn .fa-plus')
+        const minusBtn = $(this).find('.viewMoreBtn .fa-minus')
 
         if (minusBtn.is(':visible')){ /* 박스 열려있으면 */
             eventBox.css('display', 'none') /* 박스 닫기 */
-            plusBtn.toggle(); minusBtn.toggle();
+            plusBtn.toggle(); minusBtn.toggle()
             
         } else { /* 박스 닫혀있으면 초기화 하고 진행 */
             $('.dropRow').css('display', 'none') 
@@ -81,21 +82,24 @@ $(document).ready(function(){
             $('.viewMoreBtn .fa-plus').css('display', 'block')
 
             eventBox.css('display', 'block')
-            plusBtn.toggle(); minusBtn.toggle();
-            
+            plusBtn.toggle(); minusBtn.toggle()
         }
-    });
+    })
 
 
-
-    $('.billboardHot100 .song').click(function(){
-        let backImg = $(this).find('img').attr('src')
-        $(this).find('.dropCover').css('background-image', 'url(' + backImg + ')');
-        $(this).find('.dropCover').css('background-repeat', 'no-repeat');
-        $(this).find('.dropCover').css('background-size', 'cover');
-        $(this).find('.dropCover').css('background-position', 'center');
-        // $(this).find('.dropCover').css('filter', 'blur(5px)');
-        $(this).find('.dropCover').find('img').css('filter', 'inherit');
+    /* 앨범 커버를 재사용해서 뒷 배경 만들기 */
+    $('.billboardHot100 .song').click(function() {
+        const backImg =  $(this).find('img').attr('src')
+        const $dropCover = $(this).find('.dropCover')
+        
+        $dropCover.css({
+            'background-image': `url(${backImg})`,
+            'background-repeat': 'no-repeat',
+            'background-size': 'cover',
+            'background-position': 'center'
+        })
+        
+        $dropCover.find('img').css('filter', 'inherit')
     })
 })
 
